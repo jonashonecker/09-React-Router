@@ -1,0 +1,27 @@
+.new-character-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.new-character-form > form {
+    border: 1px solid white;
+}
+
+.new-character-form__grid {
+    padding: 25px 25px 0 25px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-auto-flow: column;
+}
+
+.new-character-form__grid > div {
+    display: flex;
+    align-items: center;
+}
+
+.new-character-form > form > button {
+    margin: 10px 0 20px 0;
+    width: 150px;
+}

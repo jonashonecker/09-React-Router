@@ -1,6 +1,7 @@
 import {useState} from "react";
 import {characters} from "../Characters.ts";
 import CharacterGallery from "./CharacterGallery.tsx";
+import NewCharacterForm from "./NewCharacterForm.tsx";
 
 export default function CharacterSearch () {
     const [searchText, setSearchText] = useState("");
@@ -16,6 +17,7 @@ export default function CharacterSearch () {
                     ? <CharacterGallery characters={filteredCharacters}/>
                     : <p>No characters found</p>
             }
+            <NewCharacterForm/>
         </>
     );
 }
